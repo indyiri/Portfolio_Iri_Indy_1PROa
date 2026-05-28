@@ -279,9 +279,12 @@ main {
         }
 
         div.main__about-me__cv__extra {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 15.625rem);
+            justify-content: center;
+            column-gap: 10rem;
+            row-gap: 1.25rem;
             margin: 2.1875rem 0 1.25rem 0;
-            justify-content: space-between;
 
             h2 {
                 text-align: center;
@@ -306,11 +309,15 @@ main {
                 margin: 0.9375rem 0 1.25rem 0;
                 background-color: #F4F4F9;
                 width: 15.625rem;
-                height: 12.5rem;
+                min-height: 12.5rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+            }
+
+            div.main__about-me__cv__extra__skills--hard div.main__about-me__cv__extra__skills__list {
+                min-height: 18rem;
             }
 
             div.main__about-me__cv__extra__skills__list:hover,
@@ -324,7 +331,7 @@ main {
         div.main__about-me__cv__language-skills {
             margin: 1.5625rem 0;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 1rem;
 
             div {
