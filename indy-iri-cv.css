@@ -282,7 +282,7 @@ main {
             display: grid;
             grid-template-columns: repeat(2, 15.625rem);
             justify-content: center;
-            column-gap: 10rem;
+            column-gap: 3rem;
             row-gap: 1.25rem;
             margin: 2.1875rem 0 1.25rem 0;
 
@@ -316,8 +316,29 @@ main {
                 transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
             }
 
-            div.main__about-me__cv__extra__skills--hard div.main__about-me__cv__extra__skills__list {
+            div.main__about-me__cv__extra__skills--it div.main__about-me__cv__extra__skills__list {
                 min-height: 18rem;
+            }
+
+            div.main__about-me__cv__extra__skills:first-of-type {
+                grid-column: 1 / 3;
+                justify-self: center;
+            }
+
+            div.main__about-me__cv__extra__skills--it {
+                grid-column: 1 / 2;
+            }
+
+            div.main__about-me__cv__extra__skills--scientific {
+                grid-column: 2 / 3;
+            }
+
+            div.main__about-me__cv__extra__core-qualities {
+                grid-column: 1 / 2;
+            }
+
+            div.main__about-me__cv__extra__core-values {
+                grid-column: 2 / 3;
             }
 
             div.main__about-me__cv__extra__skills__list:hover,
