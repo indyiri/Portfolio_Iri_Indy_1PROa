@@ -210,6 +210,11 @@ main h3 {
     scroll-margin-top: 4rem;
 }
 
+
+#aboutme {
+    scroll-margin-top: 7rem;
+}
+
 .main__about-me__introduction__content {
     display: flex;
     align-items: center;
